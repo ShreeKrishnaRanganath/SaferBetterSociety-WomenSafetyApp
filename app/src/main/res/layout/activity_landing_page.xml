@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/current_location_layout"
+        android:layout_marginTop="-1dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.0"
+        tools:context=".Landing_Page" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/current_location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/cityma"
+
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/women_cartoon"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/crnt_loc_tv"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="“Feminism isn’t about making women strong. Women are already strong. It’s about changing the way the world perceives that strength.”"
+            android:textColor="#D3C9A6"
+            android:textStyle="bold|italic"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toStartOf="@+id/imageView2"
+            map:layout_constraintHorizontal_bias="0.0"
+            map:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/crtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Current Location -"
+            android:textColor="#D3C9A6"
+            map:layout_constraintBottom_toTopOf="@+id/crnt_loc_tv"
+            map:layout_constraintEnd_toEndOf="@+id/crnt_loc_tv"
+            map:layout_constraintHorizontal_bias="0.0"
+            map:layout_constraintStart_toStartOf="@+id/crnt_loc_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="75dp"-->
+<!--        android:layout_alignParentStart="false"-->
+<!--        android:layout_alignParentTop="false"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:background="@color/peach_day">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/ic"-->
+<!--            android:layout_width="383dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            map:srcCompat="@drawable/ic_baseline_message_24" />-->
+<!--    </LinearLayout>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-1dp"
+        android:alpha="10"
+        android:background="#171717"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="1.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="1.0">
+
+
+        <ImageButton
+            android:id="@+id/siren"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="45dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/siren"
+            map:layout_constraintBottom_toBottomOf="@+id/police"
+            map:layout_constraintStart_toEndOf="@+id/police"
+            map:layout_constraintTop_toTopOf="@+id/police"
+            map:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/sos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sos"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/call_user"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="45dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/call"
+            map:layout_constraintBottom_toBottomOf="@+id/sos"
+            map:layout_constraintEnd_toStartOf="@+id/sos"
+            map:layout_constraintTop_toTopOf="@+id/sos"
+            map:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/add_user"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="45dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add"
+            map:layout_constraintBottom_toBottomOf="@+id/call_user"
+            map:layout_constraintEnd_toStartOf="@+id/call_user"
+            map:layout_constraintTop_toTopOf="@+id/call_user"
+            map:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/police"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="45dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/police"
+            map:layout_constraintBottom_toBottomOf="@+id/sos"
+            map:layout_constraintStart_toEndOf="@+id/sos"
+            map:layout_constraintTop_toTopOf="@+id/sos"
+            map:layout_constraintVertical_bias="0.222" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/constraintLayout2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="11dp"
+        android:text="Stop Siren" />
+
+
+</RelativeLayout>
+

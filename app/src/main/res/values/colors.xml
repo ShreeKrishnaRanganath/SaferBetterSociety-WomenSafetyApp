@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="peach_nigth">#BD6464</color>
+    <color name="peach_day">#C5A3A3</color>
+    <color name="peach_mid">#EF9F9F</color>
+    <color name="purple">#B1A1D8</color>
+    <color name="teal">#9CB4CC</color>
+    <color name="black">#6c6c6c</color>
+    <color name="white">#fcfced</color>
+</resources>

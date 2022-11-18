@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundcolor="@drawable/mapwallpaper"
+    tools:context=".contact_book">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textAlignment="center"
+        android:textColor="#F3ECEC"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="148dp"
+        android:layout_height="22dp"
+        android:lineSpacingExtra="0sp"
+        android:text="Add Conatct"
+        android:textAlignment="center"
+        android:textColor="#ECE4E4"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/bits_frame"
+        android:drawablePadding="10dp"
+        android:hint="   Phone Number"
+        android:inputType="number"
+        android:textColor="#EFE9E9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bits_frame"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:padding="15dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/edittext"
+        app:layout_constraintStart_toEndOf="@+id/edittext"
+        app:layout_constraintTop_toTopOf="@+id/edittext"
+        app:srcCompat="@drawable/backspace" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:padding="15dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="@+id/edittext"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="@+id/edittext"
+        app:layout_constraintTop_toBottomOf="@+id/edittext"
+        app:srcCompat="@drawable/useradd" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="454dp"
+        android:layout_marginTop="12dp"
+        android:background="#72CCCDCB"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/tvnocon"
+        android:layout_width="169dp"
+        android:layout_height="60dp"
+        android:text=" "
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/listview"
+        app:layout_constraintEnd_toEndOf="@+id/listview"
+        app:layout_constraintStart_toStartOf="@+id/listview"
+        app:layout_constraintTop_toTopOf="@+id/listview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
